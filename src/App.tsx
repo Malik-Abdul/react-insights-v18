@@ -1,10 +1,12 @@
+import { Fragment } from "react/jsx-runtime";
 import "./App.css";
+import Layout from "./components/ui/Layout";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">React App</header>
-    </div>
+    <Fragment>
+      <Layout />
+    </Fragment>
   );
 };
 

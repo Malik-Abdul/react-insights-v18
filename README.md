@@ -101,3 +101,5 @@ yarn build
 yarn add --dev typescript @types/react @types/react-dom
 npx tsc --init
 ```
+
+Change files index.js and App.js to index.tsx and App.tsx
