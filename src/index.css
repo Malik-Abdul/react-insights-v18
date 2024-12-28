@@ -1,13 +1,345 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: #ababab;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* Start */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+body.dark {
+  background-color: #282c34;
+  color: #bdbdbda8;
+}
+body.light {
+  background-color: #ffffff;
+  color: #888;
+}
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 25px 0px;
+}
+.top-menu.dark {
+  background-color: #282c34;
+  color: #bdbdbda8;
+  border-bottom: 0.5px solid #3c3c43cf;
+}
+.top-menu.light {
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: 0.5px solid #e7e7e7;
+}
+.top-eachNave {
+  padding: 8px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.top-eachNave.dark {
+  color: #bdbdbda8;
+}
+.top-eachNave.light {
+  color: #3c3c43cf;
+}
+.top-eachNave.active,
+.top-eachNave.dark:hover,
+.top-eachNave.light:hover {
+  color: rgb(198, 45, 72);
+  text-decoration: none;
+}
+.nav {
+  padding: 41px 5px;
+  margin-bottom: 20px;
+}
+.theme-switcher {
+  padding: 0px 20px;
+}
+.main {
+  display: flex;
+  margin-top: 0px;
+}
+.sideBar {
+  width: 226px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  flex-shrink: 0;
+}
+.sideBar.dark {
+  background-color: #282c34;
+  color: #bdbdbda8;
+}
+.sideBar.light {
+  background-color: #f6f6f7;
+  color: #000000;
+}
+
+.side-menu {
+  padding: 25px 0px;
+}
+.side-eachNave {
+  padding: 8px;
+  margin: 10px;
+  text-decoration: none;
+  display: block;
+}
+.side-menu a.side-eachNave {
+  color: rgba(60, 60, 67, 0.81);
+  font-weight: 500;
+}
+.side-menu a.side-eachNave.dark {
+  color: #bdbdbda8;
+}
+.side-menu a.side-eachNave.light {
+  color: rgba(60, 60, 67, 0.81);
+}
+.side-menu a.side-eachNave.active {
+  color: #3451b2;
+  font-weight: 500;
+}
+.side-menu a.side-eachNave:hover {
+  color: #3451b2 !important;
+  font-weight: 500;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 41px;
+  max-width: calc(100% - 226px);
+}
+.content.dark {
+  background-color: #282c34;
+  color: #bdbdbda8;
+}
+.content.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.jsxCode {
+  padding: 15px;
+  margin: 11px 0px;
+  border-radius: 5px;
+}
+.content.dark .jsxCode {
+  background-color: #282c34;
+  color: green;
+  border: 1px solid;
+}
+.content.light .jsxCode {
+  background-color: #f6f6f7;
+  color: green;
+  border: 1px solid #f6f6f7;
+}
+.jsxCode .example {
+  color: rgb(15, 105, 270);
+}
+a {
+  color: #3451b2;
+  text-decoration: none;
+  font-weight: 100;
+  transition: color 0.3s ease;
+}
+
+.mermaid-container {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  overflow: hidden;
+}
+
+.mermaid {
+  width: 100%;
+  height: auto;
+}
+article.posts {
+  width: 433px;
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+.link {
+  padding: 0px 0px 20px 0px;
+}
+.link a {
+  font-weight: bold;
+}
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+.footer.dark {
+  background-color: #282c34;
+  color: #bdbdbda8;
+  border-top: 0.5px solid #3c3c43cf;
+}
+.footer.light {
+  background-color: #fff;
+  color: #000;
+  border-top: 0.5px solid #e7e7e7;
+}
+
+/* Start */
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-item a {
+  color: #888;
+  font-weight: 500;
+}
+
+.menu-item a:hover {
+  font-weight: 500;
+  color: #3451b2 !important;
+}
+
+/* Submenu styles */
+.submenu {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.submenu li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.submenu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+.submenu li a.dark {
+  color: #bdbdbda8;
+}
+.submenu li a.light {
+  color: #888;
+}
+
+.submenu li a:hover {
+  color: #3451b2 !important;
+}
+
+.submenu li a.active,
+.menu-item a.active {
+  color: #3451b2 !important;
+}
+.active {
+  font-weight: bold;
+  color: #0070f3;
+}
+.menu-item .arrow,
+.submenu .submenu-item .arrow {
+  font-size: 10px;
+  margin-left: 15px;
+}
+/* End */
+
+.practice.btn {
+  padding: 1px;
+  margin: 1px;
+}
+.practice.btn.dark {
+  background-color: #282c34;
+  color: #ffffff;
+  border: 1px solid #282c34;
+}
+.practice.btn.blue {
+  background-color: #4a81f3;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+div.paragraph {
+  font-family: Arial, sans-serif; /* Use a readable font */
+  font-size: 16px; /* Typical paragraph font size */
+  line-height: 1.6; /* Spacing between lines */
+  margin: 1em 0; /* Top and bottom spacing */
+  text-align: justify; /* Align text like in a paragraph */
+  padding: 0; /* No padding unless needed */
+}
+.pageLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.pageLinks a {
+  margin-right: 7px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media print {
+  .page-header,
+  .sideBar,
+  .footer {
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+  }
+  .content {
+    width: 100%;
+    text-align: left; /* Align content to the left */
+    padding: 0 20px; /* Add some padding to avoid content touching the edges */
+  }
+  div,
+  h2 {
+    margin: 0;
+    text-align: left; /* Ensure left alignment */
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+/* End */
