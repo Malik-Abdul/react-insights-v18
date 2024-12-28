@@ -1,0 +1,555 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "AG 5 qq",
+      "email": "aa@example.com",
+      "age": 39
+    },
+    {
+      "id": 2,
+      "name": "Malik",
+      "email": "malik@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Aisha",
+      "email": "aisha@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Ahmed",
+      "email": "ahmed@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Fatima",
+      "email": "fatima@example.com"
+    },
+    {
+      "id": 6,
+      "name": "Zain",
+      "email": "zain@example.com"
+    },
+    {
+      "id": 7,
+      "name": "Sara",
+      "email": "sara@example.com"
+    },
+    {
+      "id": 8,
+      "name": "Omar",
+      "email": "omar@example.com"
+    },
+    {
+      "id": 9,
+      "name": "Layla",
+      "email": "layla@example.com"
+    },
+    {
+      "id": 10,
+      "name": "Hassan",
+      "email": "hassan@example.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1",
+      "body": "This is the first post",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "title": "Post 2",
+      "body": "This is the second post",
+      "userId": 5
+    },
+    {
+      "id": 3,
+      "title": "Post 3",
+      "body": "This is the third post",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "title": "Post 4",
+      "body": "This is the fourth post",
+      "userId": 7
+    },
+    {
+      "id": 5,
+      "title": "Post 5",
+      "body": "This is the fifth post",
+      "userId": 3
+    },
+    {
+      "id": 6,
+      "title": "Post 6",
+      "body": "This is the sixth post",
+      "userId": 6
+    },
+    {
+      "id": 7,
+      "title": "Post 7",
+      "body": "This is the seventh post",
+      "userId": 8
+    },
+    {
+      "id": 8,
+      "title": "Post 8",
+      "body": "This is the eighth post",
+      "userId": 4
+    },
+    {
+      "id": 9,
+      "title": "Post 9",
+      "body": "This is the ninth post",
+      "userId": 10
+    },
+    {
+      "id": 10,
+      "title": "Post 10",
+      "body": "This is the tenth post",
+      "userId": 9
+    },
+    {
+      "id": 11,
+      "title": "Post 11",
+      "body": "This is the eleventh post",
+      "userId": 5
+    },
+    {
+      "id": 12,
+      "title": "Post 12",
+      "body": "This is the twelfth post",
+      "userId": 2
+    },
+    {
+      "id": 13,
+      "title": "Post 13",
+      "body": "This is the thirteenth post",
+      "userId": 7
+    },
+    {
+      "id": 14,
+      "title": "Post 14",
+      "body": "This is the fourteenth post",
+      "userId": 1
+    },
+    {
+      "id": 15,
+      "title": "Post 15",
+      "body": "This is the fifteenth post",
+      "userId": 6
+    },
+    {
+      "id": 16,
+      "title": "Post 16",
+      "body": "This is the sixteenth post",
+      "userId": 9
+    },
+    {
+      "id": 17,
+      "title": "Post 17",
+      "body": "This is the seventeenth post",
+      "userId": 8
+    },
+    {
+      "id": 18,
+      "title": "Post 18",
+      "body": "This is the eighteenth post",
+      "userId": 3
+    },
+    {
+      "id": 19,
+      "title": "Post 19",
+      "body": "This is the nineteenth post",
+      "userId": 4
+    },
+    {
+      "id": 20,
+      "title": "Post 20",
+      "body": "This is the twentieth post",
+      "userId": 10
+    },
+    {
+      "id": 21,
+      "title": "Post 21",
+      "body": "This is the twenty-first post",
+      "userId": 5
+    },
+    {
+      "id": 22,
+      "title": "Post 22",
+      "body": "This is the twenty-second post",
+      "userId": 7
+    },
+    {
+      "id": 23,
+      "title": "Post 23",
+      "body": "This is the twenty-third post",
+      "userId": 2
+    },
+    {
+      "id": 24,
+      "title": "Post 24",
+      "body": "This is the twenty-fourth post",
+      "userId": 6
+    },
+    {
+      "id": 25,
+      "title": "Post 25",
+      "body": "This is the twenty-fifth post",
+      "userId": 9
+    },
+    {
+      "id": 26,
+      "title": "Post 26",
+      "body": "This is the twenty-sixth post",
+      "userId": 1
+    },
+    {
+      "id": 27,
+      "title": "Post 27",
+      "body": "This is the twenty-seventh post",
+      "userId": 3
+    },
+    {
+      "id": 28,
+      "title": "Post 28",
+      "body": "This is the twenty-eighth post",
+      "userId": 8
+    },
+    {
+      "id": 29,
+      "title": "Post 29",
+      "body": "This is the twenty-ninth post",
+      "userId": 10
+    },
+    {
+      "id": 30,
+      "title": "Post 30",
+      "body": "This is the thirtieth post",
+      "userId": 4
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i0.pickpik.com/photos/573/909/315/store-clothes-clothing-line-preview.jpg",
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T20:59:43.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Garments",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-02T03:20:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Electronics",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-02T03:20:00.000Z"
+    },
+    {
+      "id": 5,
+      "name": "Furniture",
+      "image": "https://images.pexels.com/photos/7718714/pexels-photo-7718714.jpeg",
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T22:37:42.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 15,
+      "title": "Classic White Crew Neck T-Shirt",
+      "price": 39,
+      "description": "Elevate your basics with this versatile white crew neck tee. Made from a soft, breathable cotton blend, it offers both comfort and durability. Its sleek, timeless design ensures it pairs well with virtually any outfit. Ideal for layering or wearing on its own, this t-shirt is a must-have staple for every wardrobe.",
+      "images": [
+        "https://i.imgur.com/axsyGpD.jpeg",
+        "https://i.imgur.com/T8oq9X2.jpeg",
+        "https://i.imgur.com/J6MinJn.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 2
+    },
+    {
+      "id": 16,
+      "title": "Classic White Tee - Timeless Style and Comfort",
+      "price": 73,
+      "description": "Elevate your everyday wardrobe with our Classic White Tee. Crafted from premium soft cotton material, this versatile t-shirt combines comfort with durability, perfect for daily wear. Featuring a relaxed, unisex fit that flatters every body type, it's a staple piece for any casual ensemble. Easy to care for and machine washable, this white tee retains its shape and softness wash after wash. Pair it with your favorite jeans or layer it under a jacket for a smart look.",
+      "images": [
+        "https://i.imgur.com/Y54Bt8J.jpeg",
+        "https://i.imgur.com/SZPDSgy.jpeg",
+        "https://i.imgur.com/sJv4Xx0.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 2
+    },
+    {
+      "id": 17,
+      "title": "Classic Black T-Shirt",
+      "price": 35,
+      "description": "Elevate your everyday style with our Classic Black T-Shirt. This staple piece is crafted from soft, breathable cotton for all-day comfort. Its versatile design features a classic crew neck and short sleeves, making it perfect for layering or wearing on its own. Durable and easy to care for, it's sure to become a favorite in your wardrobe.",
+      "images": [
+        "https://i.imgur.com/9DqEOV5.jpeg",
+        "https://i.imgur.com/ae0AEYn.jpeg",
+        "https://i.imgur.com/mZ4rUjj.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 2
+    },
+    {
+      "id": 18,
+      "title": "Sleek White & Orange Wireless Gaming Controller",
+      "price": 69,
+      "description": "Elevate your gaming experience with this state-of-the-art wireless controller, featuring a crisp white base with vibrant orange accents. Designed for precision play, the ergonomic shape and responsive buttons provide maximum comfort and control for endless hours of gameplay. Compatible with multiple gaming platforms, this controller is a must-have for any serious gamer looking to enhance their setup.",
+      "images": [
+        "https://i.imgur.com/ZANVnHE.jpeg",
+        "https://i.imgur.com/Ro5z6Tn.jpeg",
+        "https://i.imgur.com/woA93Li.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 2
+    },
+    {
+      "id": 19,
+      "title": "Sleek Wireless Headphone & Inked Earbud Set",
+      "price": 44,
+      "description": "Experience the fusion of style and sound with this sophisticated audio set featuring a pair of sleek, white wireless headphones offering crystal-clear sound quality and over-ear comfort. The set also includes a set of durable earbuds, perfect for an on-the-go lifestyle. Elevate your music enjoyment with this versatile duo, designed to cater to all your listening needs.",
+      "images": [
+        "https://i.imgur.com/yVeIeDa.jpeg",
+        "https://i.imgur.com/jByJ4ih.jpeg",
+        "https://i.imgur.com/KXj6Tpb.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 2
+    },
+    {
+      "id": 20,
+      "title": "Sleek Comfort-Fit Over-Ear Headphones",
+      "price": 28,
+      "description": "Experience superior sound quality with our Sleek Comfort-Fit Over-Ear Headphones, designed for prolonged use with cushioned ear cups and an adjustable, padded headband. Ideal for immersive listening, whether you're at home, in the office, or on the move. Their durable construction and timeless design provide both aesthetically pleasing looks and long-lasting performance.",
+      "images": [
+        "https://i.imgur.com/SolkFEB.jpeg",
+        "https://i.imgur.com/KIGW49u.jpeg",
+        "https://i.imgur.com/mWwek7p.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 3
+    },
+    {
+      "id": 24,
+      "title": "Sleek Modern Laptop for Professionals",
+      "price": 97,
+      "description": "Experience cutting-edge technology and elegant design with our latest laptop model. Perfect for professionals on-the-go, this high-performance laptop boasts a powerful processor, ample storage, and a long-lasting battery life, all encased in a lightweight, slim frame for ultimate portability. Shop now to elevate your work and play.",
+      "images": [
+        "https://i.imgur.com/ItHcq7o.jpeg",
+        "https://i.imgur.com/55GM3XZ.jpeg",
+        "https://i.imgur.com/tcNJxoW.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 3
+    },
+    {
+      "id": 25,
+      "title": "Stylish Red & Silver Over-Ear Headphones",
+      "price": 39,
+      "description": "Immerse yourself in superior sound quality with these sleek red and silver over-ear headphones. Designed for comfort and style, the headphones feature cushioned ear cups, an adjustable padded headband, and a detachable red cable for easy storage and portability. Perfect for music lovers and audiophiles who value both appearance and audio fidelity.",
+      "images": [
+        "https://i.imgur.com/YaSqa06.jpeg",
+        "https://i.imgur.com/isQAliJ.jpeg",
+        "https://i.imgur.com/5B8UQfh.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 3
+    },
+    {
+      "id": 26,
+      "title": "Sleek Mirror Finish Phone Case",
+      "price": 27,
+      "description": "Enhance your smartphone's look with this ultra-sleek mirror finish phone case. Designed to offer style with protection, the case features a reflective surface that adds a touch of elegance while keeping your device safe from scratches and impacts. Perfect for those who love a minimalist and modern aesthetic.",
+      "images": [
+        "https://i.imgur.com/yb9UQKL.jpeg",
+        "https://i.imgur.com/m2owtQG.jpeg",
+        "https://i.imgur.com/bNiORct.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 3
+    },
+    {
+      "id": 27,
+      "title": "Sleek Smartwatch with Vibrant Display",
+      "price": 16,
+      "description": "Experience modern timekeeping with our high-tech smartwatch, featuring a vivid touch screen display, customizable watch faces, and a comfortable blue silicone strap. This smartwatch keeps you connected with notifications and fitness tracking while showcasing exceptional style and versatility.",
+      "images": [
+        "https://i.imgur.com/LGk9Jn2.jpeg",
+        "https://i.imgur.com/1ttYWaI.jpeg",
+        "https://i.imgur.com/sPRWnJH.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 3
+    },
+    {
+      "id": 28,
+      "title": "Sleek Modern Leather Sofa",
+      "price": 53,
+      "description": "Enhance the elegance of your living space with our Sleek Modern Leather Sofa. Designed with a minimalist aesthetic, it features clean lines and a luxurious leather finish. The robust metal legs provide stability and support, while the plush cushions ensure comfort. Perfect for contemporary homes or office waiting areas, this sofa is a statement piece that combines style with practicality.",
+      "images": [
+        "https://i.imgur.com/Qphac99.jpeg",
+        "https://i.imgur.com/dJjpEgG.jpeg",
+        "https://i.imgur.com/MxJyADq.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 5
+    },
+    {
+      "id": 29,
+      "title": "Mid-Century Modern Wooden Dining Table",
+      "price": 24,
+      "description": "Elevate your dining room with this sleek Mid-Century Modern dining table, featuring an elegant walnut finish and tapered legs for a timeless aesthetic. Its sturdy wood construction and minimalist design make it a versatile piece that fits with a variety of decor styles. Perfect for intimate dinners or as a stylish spot for your morning coffee.",
+      "images": [
+        "https://i.imgur.com/DMQHGA0.jpeg",
+        "https://i.imgur.com/qrs9QBg.jpeg",
+        "https://i.imgur.com/XVp8T1I.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 5
+    },
+    {
+      "id": 30,
+      "title": "Elegant Golden-Base Stone Top Dining Table",
+      "price": 66,
+      "description": "Elevate your dining space with this luxurious table, featuring a sturdy golden metal base with an intricate rod design that provides both stability and chic elegance. The smooth stone top in a sleek round shape offers a robust surface for your dining pleasure. Perfect for both everyday meals and special occasions, this table easily complements any modern or glam decor.",
+      "images": [
+        "https://i.imgur.com/NWIJKUj.jpeg",
+        "https://i.imgur.com/Jn1YSLk.jpeg",
+        "https://i.imgur.com/VNZRvx5.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 5
+    },
+    {
+      "id": 31,
+      "title": "Modern Elegance Teal Armchair",
+      "price": 39,
+      "description": "Elevate your living space with this beautifully crafted armchair, featuring a sleek wooden frame that complements its vibrant teal upholstery. Ideal for adding a pop of color and contemporary style to any room, this chair provides both superb comfort and sophisticated design. Perfect for reading, relaxing, or creating a cozy conversation nook.",
+      "images": [
+        "https://i.imgur.com/6wkyyIN.jpeg",
+        "https://i.imgur.com/Ald3Rec.jpeg",
+        "https://i.imgur.com/dIqo03c.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-02T11:37:32.000Z",
+      "categoryId": 5
+    },
+    {
+      "id": 32,
+      "title": "Elegant Solid Wood Dining Table",
+      "price": 67,
+      "description": "Enhance your dining space with this sleek, contemporary dining table, crafted from high-quality solid wood with a warm finish. Its sturdy construction and minimalist design make it a perfect addition for any home looking for a touch of elegance. Accommodates up to six guests comfortably and includes a striking fruit bowl centerpiece. The overhead lighting is not included.",
+      "images": [
+        "https://i.imgur.com/4lTaHfF.jpeg",
+        "https://i.imgur.com/JktHE1C.jpeg",
+        "https://i.imgur.com/cQeXQMi.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 5
+    },
+    {
+      "id": 33,
+      "title": "Modern Minimalist Workstation Setup",
+      "price": 49,
+      "description": "Elevate your home office with our Modern Minimalist Workstation Setup, featuring a sleek wooden desk topped with an elegant computer, stylish adjustable wooden desk lamp, and complimentary accessories for a clean, productive workspace. This setup is perfect for professionals seeking a contemporary look that combines functionality with design.",
+      "images": [
+        "https://i.imgur.com/3oXNBst.jpeg",
+        "https://i.imgur.com/ErYYZnT.jpeg",
+        "https://i.imgur.com/boBPwYW.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 5
+    },
+    {
+      "id": 7,
+      "title": "Classic Comfort Drawstring Joggers",
+      "price": 7933,
+      "description": "sdw",
+      "images": ["https://i.imgur.com/kKc9A5p.jpeg"],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-02T12:00:06.000Z",
+      "categoryId": 1
+    },
+    {
+      "id": 11,
+      "title": "Classic Red Baseball Cap",
+      "price": 35,
+      "description": "Elevate your casual wardrobe with this timeless red baseball cap. Crafted from durable fabric, it features a comfortable fit with an adjustable strap at the back, ensuring one size fits all. Perfect for sunny days or adding a sporty touch to your outfit.",
+      "images": [
+        "https://i.imgur.com/cBuLvBi.jpeg",
+        "https://i.imgur.com/N1GkCIR.jpeg",
+        "https://i.imgur.com/kKc9A5p.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 1
+    },
+    {
+      "id": 12,
+      "title": "Classic Black Baseball Cap",
+      "price": 58,
+      "description": "Elevate your casual wear with this timeless black baseball cap. Made with high-quality, breathable fabric, it features an adjustable strap for the perfect fit. Whether you’re out for a jog or just running errands, this cap adds a touch of style to any outfit.",
+      "images": [
+        "https://i.imgur.com/KeqG6r4.jpeg",
+        "https://i.imgur.com/xGQOw3p.jpeg",
+        "https://i.imgur.com/oO5OUjb.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 1
+    },
+    {
+      "id": 13,
+      "title": "Classic Olive Chino Shorts",
+      "price": 84,
+      "description": "Elevate your casual wardrobe with these classic olive chino shorts. Designed for comfort and versatility, they feature a smooth waistband, practical pockets, and a tailored fit that makes them perfect for both relaxed weekends and smart-casual occasions. The durable fabric ensures they hold up throughout your daily activities while maintaining a stylish look.",
+      "images": [
+        "https://i.imgur.com/UsFIvYs.jpeg",
+        "https://i.imgur.com/YIq57b6.jpeg"
+      ],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 1
+    },
+    {
+      "id": 14,
+      "title": "Classic High-Waisted Athletic Shorts",
+      "price": 43,
+      "description": "Stay comfortable and stylish with our Classic High-Waisted Athletic Shorts. Designed for optimal movement and versatility, these shorts are a must-have for your workout wardrobe. Featuring a figure-flattering high waist, breathable fabric, and a secure fit that ensures they stay in place during any activity, these shorts are perfect for the gym, running, or even just casual wear.",
+      "images": ["https://i.imgur.com/NLn4e7S.jpeg"],
+      "creationAt": "2024-10-01T17:05:39.000Z",
+      "updatedAt": "2024-10-01T17:05:39.000Z",
+      "categoryId": 1
+    }
+  ]
+}
