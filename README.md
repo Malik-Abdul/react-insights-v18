@@ -103,3 +103,9 @@ npx tsc --init
 ```
 
 Change files index.js and App.js to index.tsx and App.tsx
+
+## Install
+
+```bash
+yarn add react-router-dom@latest
+```
