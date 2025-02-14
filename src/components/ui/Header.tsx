@@ -1,4 +1,5 @@
 import React, { Fragment, useContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 // import Link from "next/link";
 
@@ -13,10 +14,10 @@ const Header = () => {
 
   const nav = [
     { id: 1, title: "Home", link: "/" },
-    { id: 2, title: "React Query", link: "/react-query" },
-    { id: 3, title: "React Redux", link: "/react-redux" },
-    { id: 4, title: "React Context API", link: "/react-context-api" },
-    { id: 5, title: "Mock Interviews", link: "/mock-interviews" },
+    { id: 2, title: "About", link: "/about" },
+    // { id: 2, title: "React Query", link: "/react-query" },
+    { id: 3, title: "React Redux", link: "/ReactRedux" },
+    // { id: 4, title: "React Context API", link: "/react-context-api" },
   ];
 
   //   const context = useContext(ThemeContext);
@@ -34,20 +35,20 @@ const Header = () => {
         <nav className={`top-menu ${theme}`}>
           <div className="nav-links">
             {nav.map((item) => (
-              <a
+              <Link
                 key={item.id}
                 className={
-                  activeLink == item.id
+                  activeLink === item.id
                     ? `top-eachNave ${theme} active`
                     : `top-eachNave ${theme}`
                 }
-                href={item.link}
+                to={item.link}
                 onClick={() => {
                   setActiveLink(item.id);
                 }}
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="theme-switcher">
