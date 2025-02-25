@@ -108,4 +108,6 @@ Change files index.js and App.js to index.tsx and App.tsx
 
 ```bash
 yarn add react-router-dom@latest
+
+yarn add react-redux
 ```
