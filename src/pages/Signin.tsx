@@ -1,6 +1,6 @@
 import Login from "../components/ui/Login";
 
-const Sigin = () => {
+const Signin = () => {
   return (
     <div>
       Sigin Page
@@ -11,4 +11,4 @@ const Sigin = () => {
   );
 };
 
-export default Sigin;
+export default Signin;

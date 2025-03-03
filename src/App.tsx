@@ -12,28 +12,26 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Header from "./components/ui/Header";
 import ReactRedux from "./pages/ReactRedux";
-import Sigin from "./pages/Sigin";
-import ProtectedRoute from "./components/ProtectedRoute";
+import Signin from "./pages/Signin";
+import { AuthProvider } from "../src/context/AuthContext";
 
 const App: React.FC = () => {
   return (
     <Fragment>
       <Provider store={store}>
         {/* <Layout /> */}
+        <AuthProvider>
         <Router>
           <Header /> {/* Optional: Navigation Component */}
           <Routes>
-            <Route path="/Sigin" element={<Sigin />} />
-            <Route element={<ProtectedRoute />}>
+            <Route path="/Signin" element={<Signin />} />
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="ReactRedux" element={<ReactRedux />} />
-            </Route>
-
-            <Route path="*" element={<ProtectedRoute />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
+        </AuthProvider>
       </Provider>
     </Fragment>
   );
