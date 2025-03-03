@@ -2,6 +2,10 @@ import React, { Fragment, useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { logout } from "../../api/auth";
+import axios from "axios";
+
+import { useAuth } from "../../context/AuthContext";
+
 
 // import Link from "next/link";
 
@@ -16,8 +20,10 @@ const Header = () => {
   const navigate = useNavigate();
   const isAuthenticated = !!localStorage.getItem("access_token"); // Check if user is logged in
 
+  const { user, handleLogout } = useAuth();
+
   const nav = [
-    ...(isAuthenticated
+    ...(user
       ? [
           { id: 2, title: "Home", link: "/" },
           { id: 3, title: "About", link: "/about" },
@@ -36,10 +42,19 @@ const Header = () => {
 
   // console.log(theme);
 
-  const handleLogout = () => {
-    logout();
-    navigate("/Signin"); // Redirect to login
-  };
+  // const handleLogout = () => {
+  //   logout();
+  //   navigate("/Signin"); // Redirect to login
+  // };
+
+  // const handleLogout = async () => {
+  //   try {
+  //     await axios.post("http://127.0.0.1:9000/api/logout/", {}, { withCredentials: true });
+  //     navigate("/Signin");
+  //   } catch (error) {
+  //     console.error("Logout failed", error);
+  //   }
+  // };
 
   return (
     <Fragment>

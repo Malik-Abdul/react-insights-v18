@@ -1,32 +1,27 @@
-import React, { useState, useEffect } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
+import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import { login } from "../../api/auth";
+
 const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true); // Prevent flashing
-
+  const { handleLogin } = useAuth();
   const navigate = useNavigate();
+  const [formData, setFormData] = useState<{ username: string; password: string }>({
+    username: "",
+    password: "",
+  });
+  const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    const isAuthenticated = !!localStorage.getItem("access_token");
-    if (isAuthenticated) {
-      navigate("/"); // Redirect if already logged in
-    } else {
-      setLoading(false); // Allow login form to show
-    }
-  }, [navigate]);
-  if (loading) return null; // Wait until auth is checked
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-  const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-
     try {
-      await login(username, password);
-      navigate("/"); // Redirect to the dashboard
-    } catch (err) {
-      setError("Invalid credentials!");
+      await handleLogin(formData.username, formData.password);
+      navigate("/"); // Redirect on successful login
+    } catch (err: any) {
+      setError(err.error || "Login failed");
     }
   };
 
@@ -34,21 +29,9 @@ const Login = () => {
     <div>
       <h2>Login</h2>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <form onSubmit={handleLogin}>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="username" placeholder="Username" onChange={handleChange} />
+        <input type="password" name="password" placeholder="Password" onChange={handleChange} />
         <button type="submit">Login</button>
       </form>
     </div>
