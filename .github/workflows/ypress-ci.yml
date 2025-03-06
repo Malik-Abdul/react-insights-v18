@@ -1,0 +1,31 @@
+name: Run Cypress Tests
+
+on:
+  push:  # Runs on push to any branch
+  pull_request:  # Also runs on pull requests
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18  # Adjust if needed
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Start Backend Server
+        run: |
+          # Start your Django backend (modify this as needed)
+          # Example for Django: python manage.py runserver 0.0.0.0:9000 &
+          your_backend_start_command &
+          sleep 10  # Give the server time to start
+
+      - name: Run Cypress tests
+        run: yarn cypress run
