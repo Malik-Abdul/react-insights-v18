@@ -1,0 +1,30 @@
+name: Run Cypress Tests
+
+on:
+  push:  # Run on every branch push
+  pull_request:  # Also run on PRs
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20  # Updated to Node.js 20
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Start Backend Server
+        run: |
+          # Modify this to your actual backend start command
+          your_backend_start_command &
+          sleep 10  # Give server time to start
+
+      - name: Run Cypress tests
+        run: yarn cypress run
